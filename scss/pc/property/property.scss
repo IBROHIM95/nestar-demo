@@ -1,0 +1,343 @@
+#pc-wrap{
+  #property-list-page {
+    padding-bottom: 40px;
+    background: #f6f6f6;
+    .container {
+        .right {
+            position: absolute;
+            right: 0;
+            top: 1%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            z-index: 2;
+            button{
+                margin-left: 10px;
+                color: #181a20;
+                font-family: $font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: bold;
+                line-height: 26px;
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+        .property-page {
+           position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .card-box{
+                width: 70%;
+                height: auto;
+                margin-top: 64px;
+                padding-left: 40px;
+                gap: 20px;
+                
+               .card-box-pagination{
+                display: flex;
+                flex-direction: row;
+                flex-basis: 200px;
+                gap: 20px;
+               }
+               .pagination {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+               }
+                .top-card-box {
+                  //  position: relative;
+                   width: 300px;
+                   height: 375px;
+                   display: flex;
+                   flex-direction: column;
+                   transition: transform 0.3s;
+                   &:hover {
+                       opacity: 1;
+                       transform: scale(1.05);
+                   }
+                   .card-img {
+                       position: relative;
+                       width: 100%;
+                       height: 203px;
+                       background-size: cover;
+                       border-radius: 12px 12px 0px 0px;
+                       cursor: pointer;
+                       div {
+                           position: absolute;
+                           padding: 8px 12px;
+                           left: 12px;
+                           bottom: 12px;
+                           border-radius: 6px;
+                           background: #fff;
+                           color: #181a20;
+                           font-family: $font;
+                           font-size: 15px;
+                           font-style: normal;
+                           font-weight: 600;
+                           line-height: normal; 
+                       }
+                   }
+                   .info {
+                     padding: 20px 22px 17px;
+                     display: flex;
+                     flex-direction: column;
+                     box-sizing: border-box;
+                     border-radius: 0px 0px 12px 12px;
+                     border: 1px solid rgba(24, 26, 32, 0.07);
+                     .title {
+                       overflow: hidden;
+                       color: #181a20;
+                       text-overflow: ellipsis;
+                       white-space: nowrap;
+                       font-family: $font;
+                       font-size: 15px;
+                       font-style: normal;
+                       font-weight: 600;
+                       line-height: normal; 
+                       text-transform: capitalize;
+                       cursor: pointer;
+             
+                     }
+                     .desc {
+                       margin-top: 5px;
+                       overflow: hidden;
+                       color: #717171;
+                       font-family: $font;
+                       font-size: 13px;
+                       font-style: normal;
+                       font-weight: 400;
+                       line-height: normal; 
+                       text-overflow: ellipsis;
+                       white-space: nowrap;
+                     }
+                     .options {
+                       margin-top: 15px;
+                       display: flex;
+                       flex-direction: row;
+                       justify-content: space-between;
+                       div {
+                         display: flex;
+                         flex-direction: row;
+                         img {
+                           margin-right: 5px;
+                           width: 17px;
+                           height: 17px;
+                         }
+                         span {
+                           color: #181a20;
+                           font-family: $font;
+                           font-size: 13px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: normal; 
+                         }
+                       }
+                     }
+                     .bott {
+                       display: flex;
+                       flex-direction: row;
+                       justify-content: space-between;
+                       align-items: center;
+                       p {
+                         color: #181a20;
+                         font-family: $font;
+                         font-size: 13px;
+                         font-style: normal;
+                         font-weight: 400;
+                         line-height: normal;
+                         text-transform: capitalize;
+                       }
+                       button {
+                         margin-left: 7px;
+                         width: 16px;
+                         height: 16px;
+                         box-sizing: border-box;
+                       }
+                       .view-like-box {
+                         display: flex;
+                         flex-direction: row;
+                         gap: 7px;
+                         align-items: center;
+                         .view-cnt {
+                           color: #717171;
+                           font-family: $font;
+                           font-size: 13px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: normal; 
+                           text-overflow: ellipsis;
+                         }
+                       }
+                     }
+                   }
+                }  
+               }
+  .filter-container {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+
+  h2 {
+    margin-top: -30px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    font-family: $font;
+    font-size: 18px;
+    font-weight: normal;
+    color: #090909;
+    
+  }
+
+  .filter-group-rooms{
+    margin: 20px 20px 20px 20px ;
+
+  .MuiFormLabel-root {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .MuiFormControlLabel-root {
+    margin-right: 10px;
+    border: 1px solid #c5c4c4;
+
+    .MuiTypography-root {
+      font-size: 14px;
+      color: #333;
+
+    }
+  }
+
+  .MuiRadio-root {
+    display: none; // Radio tugmasini butunlay olib tashlaymiz, faqat raqamlar qoladi
+  }
+
+  // Faol raqamlarni ko'rsatish va belgilanganda uslubni o'zgartirish
+  .MuiFormControlLabel-root {
+    cursor: pointer; // Raqamlarga bosiladigan effekt berish
+
+    .MuiTypography-root {
+      padding: 5px 10px;
+      font-weight: 500;
+      transition: color 0.3s ease, background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgba(0, 112, 243, 0.1); // Hover effekti
+        border-radius: 5px;
+      }
+    }
+
+    // Tanlangan raqamga stil qo'shish
+    .Mui-checked + .MuiTypography-root {
+      background-color: rgba(0, 112, 243, 0.2);
+      border-radius: 5px;
+      color: #0070f3;
+      font-weight: bold;
+    }
+  }
+  }
+  .filter-group-bedrooms{
+    width: 80%;
+    margin: 20px 20px 20px 20px ;
+
+  .MuiFormLabel-root {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .MuiFormControlLabel-root {
+    margin-right: 10px;
+    border: 1px solid #c5c4c4;
+
+    .MuiTypography-root {
+      font-size: 14px;
+      color: #333;
+
+    }
+  }
+
+  .MuiRadio-root {
+    display: none; // Radio tugmasini butunlay olib tashlaymiz, faqat raqamlar qoladi
+  }
+
+  // Faol raqamlarni ko'rsatish va belgilanganda uslubni o'zgartirish
+  .MuiFormControlLabel-root {
+    cursor: pointer; // Raqamlarga bosiladigan effekt berish
+
+    .MuiTypography-root {
+      padding: 5px 10px;
+      font-weight: 500;
+      transition: color 0.3s ease, background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgba(0, 112, 243, 0.1); // Hover effekti
+        border-radius: 5px;
+      }
+    }
+
+    // Tanlangan raqamga stil qo'shish
+    .Mui-checked + .MuiTypography-root {
+      background-color: rgba(0, 112, 243, 0.2);
+      border-radius: 5px;
+      color: #0070f3;
+      font-weight: bold;
+    }
+  }
+  }
+  
+  .filter-group {
+    margin: 0px 20px 20px 20px;
+
+    .MuiFormControl-root {
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .range-inputs {
+      display: flex;
+      justify-content: space-between;
+
+      .MuiTextField-root {
+        width: 45%;
+      }
+    }
+  }
+
+  .search-container {
+    width: 80%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+}
+  
+
+}  }
+ }  
+}
