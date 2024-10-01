@@ -40,6 +40,7 @@
                .card-box-pagination{
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 flex-basis: 200px;
                 gap: 20px;
                }
@@ -52,7 +53,7 @@
                }
                 .top-card-box {
                   //  position: relative;
-                   width: 300px;
+                   width: 270px;
                    height: 375px;
                    display: flex;
                    flex-direction: column;

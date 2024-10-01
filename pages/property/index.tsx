@@ -7,14 +7,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded"
 import PropertyCard from "@/libs/components/property/PropertyCard";
 import Filter from "@/libs/components/property/Filter";
+import useDeviceDetect from "@/libs/hooks/useDivicDetect";
 
 
 
 const PropertyList:NextPage = () => {
-
-    const [properties, setProperties] = useState<number[]>([1, 2, 3, ])
+    const device = useDeviceDetect();
+    const [properties, setProperties] = useState<number[]>([1, 2, 3, 4, 5])
     const [currentPage, setCurrentPage] = useState(1); 
-  
+    
+    
+
+  if (device === "mobile") {
+    return <Stack> PROPERTYLIST MOBILE </Stack>
+  }else {
     
     return (
       <div id="property-list-page" >
@@ -51,6 +57,7 @@ const PropertyList:NextPage = () => {
       </div>
       
     )
+}
 }
 
 export default withLayoutBasic(PropertyList) 
